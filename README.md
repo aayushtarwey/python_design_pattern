@@ -21,38 +21,62 @@ This repository contains implementations and documentation for all design patter
 
 ```
 python_design_pattern/
-├── README.md (this file)
+├── README.md                          (This file - Main overview)
+├── PATTERN_TEMPLATE.md                (Template for adding new patterns)
 ├── creational_patterns/
-│   ├── singleton/
-│   │   ├── naiveSingleton.py          (Implementation)
-│   │   ├── SINGLETON_GUIDE.md         (Markdown Documentation)
-│   │   └── SINGLETON_GUIDE.pdf        (PDF Guide for offline reading)
+│   ├── singleton/                     (✅ COMPLETED)
+│   │   ├── README.md                  (Pattern overview & quick reference)
+│   │   ├── src/
+│   │   │   └── naiveSingleton.py      (Implementation)
+│   │   └── docs/
+│   │       ├── SINGLETON_GUIDE.md     (Comprehensive documentation)
+│   │       └── SINGLETON_GUIDE.pdf    (PDF for offline reading)
 │   ├── factory_method/                (Coming soon)
 │   ├── abstract_factory/              (Coming soon)
 │   ├── builder/                       (Coming soon)
 │   └── prototype/                     (Coming soon)
-├── structural_patterns/
-│   ├── adapter/                       (Coming soon)
-│   ├── bridge/                        (Coming soon)
-│   ├── composite/                     (Coming soon)
-│   ├── decorator/                     (Coming soon)
-│   ├── facade/                        (Coming soon)
-│   ├── flyweight/                     (Coming soon)
-│   └── proxy/                         (Coming soon)
-└── behavioral_patterns/
-    ├── chain_of_responsibility/       (Coming soon)
-    ├── command/                       (Coming soon)
-    ├── interpreter/                   (Coming soon)
-    ├── iterator/                      (Coming soon)
-    ├── mediator/                      (Coming soon)
-    ├── memento/                       (Coming soon)
-    ├── observer/                      (Coming soon)
-    ├── state/                         (Coming soon)
-    ├── strategy/                      (Coming soon)
-    ├── template_method/               (Coming soon)
-    ├── visitor/                       (Coming soon)
-    └── null_object/                   (Coming soon)
+├── structural_patterns/               (Coming soon)
+│   ├── adapter/
+│   ├── bridge/
+│   ├── composite/
+│   ├── decorator/
+│   ├── facade/
+│   ├── flyweight/
+│   └── proxy/
+└── behavioral_patterns/               (Coming soon)
+    ├── chain_of_responsibility/
+    ├── command/
+    ├── interpreter/
+    ├── iterator/
+    ├── mediator/
+    ├── memento/
+    ├── observer/
+    ├── state/
+    ├── strategy/
+    ├── template_method/
+    ├── visitor/
+    └── null_object/
 ```
+
+## 📋 Pattern Structure (For Each Pattern)
+
+Each design pattern folder contains:
+
+```
+pattern_name/
+├── README.md                          (Quick reference & overview)
+├── src/
+│   └── pattern_name.py                (Clean implementation)
+└── docs/
+    ├── PATTERN_GUIDE.md               (Detailed documentation)
+    └── PATTERN_GUIDE.pdf              (Professional PDF guide)
+```
+
+**What's in each file:**
+- **README.md** - Quick overview, use cases, Q&A preview
+- **src/pattern_name.py** - Runnable, well-commented implementation
+- **docs/PATTERN_GUIDE.md** - Complete guide with examples and Q&A
+- **docs/PATTERN_GUIDE.pdf** - Professional documentation for offline use
 
 ---
 
@@ -87,19 +111,31 @@ python_design_pattern/
 source .venv/bin/activate
 
 # Run the singleton implementation
-python creational_patterns/singleton/naiveSingleton.py
+python creational_patterns/singleton/src/naiveSingleton.py
 ```
 
 ### Reading the Documentation
 
-**Markdown Format (for GitHub/IDE):**
+**For Quick Reference:**
 ```bash
-open creational_patterns/singleton/SINGLETON_GUIDE.md
+open creational_patterns/singleton/README.md
 ```
 
-**PDF Format (for offline reading):**
+**For Comprehensive Guide (Markdown):**
 ```bash
-open creational_patterns/singleton/SINGLETON_GUIDE.pdf
+open creational_patterns/singleton/docs/SINGLETON_GUIDE.md
+```
+
+**For Offline Reading (PDF):**
+```bash
+open creational_patterns/singleton/docs/SINGLETON_GUIDE.pdf
+```
+
+### Using the Template
+
+When adding a new pattern, refer to:
+```bash
+open PATTERN_TEMPLATE.md
 ```
 
 ---
